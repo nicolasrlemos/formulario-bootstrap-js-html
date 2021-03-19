@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar Conta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <!-- bootstrap -->
+    <link id="tema" rel="stylesheet" href="style.css" />
+    <!--<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">-->
+</head>
+
+<body id="corpo" class="planodefundo">
+    <div class="container">
+        <div class="titulo">
+            <h1>Criar Conta</h1>
+        </div>
+        <div id="centrao" class="centrao">
+            <form method="post" id="formulario">
+                <div class="mb-3 caixa">
+                    <label for="name" class="form-label">Nome Completo</label>
+                    <input class="form-control" id="nome" placeholder="Por favor insira seu nome aqui" type="form-text"
+                        name="name" required />
+                </div>
+
+                <div class="mb-3 caixa">
+                    <label class="form-label">CPF</label>
+                    <input class="form-control" id="cpf" placeholder="Por favor insira seu CPF aqui" type="form-text"
+                        name="cpf" required />
+                </div>
+
+                <div class="mb-3 caixa">
+                    <label class="form-label">Idade</label>
+                    <input class="form-control" id="idade" placeholder="Por favor insira sua idade aqui" type="number"
+                        name="idade" required />
+                </div>
+
+                <div class="mb-3 caixa">
+                    <label class="form-label">Telefone</label>
+                    <input class="form-control" id="telefone" placeholder="Por favor insira sua telefone aqui" type="text"
+                        name="telefone" required />
+                </div>
+
+                <div class="mb-3 caixa">
+                    <label class="form-label">Data de Nascimento</label>
+                    <input class="form-control" id="dataNascimento" placeholder="Por favor insira sua Data de Nascimento aqui"
+                        type="date" name="data" required />
+                </div>
+
+                <div class="mb-3 caixa">
+                    <label for="mail" class="form-label">Email</label>
+                    <input class="form-control" id="email" placeholder="Por favor insira seu email aqui" type="email"
+                        name="mail" required />
+                </div>
+
+                <div class="mb-3 caixa">
+                    <label class="form-label">Senha</label>
+                    <input class="form-control" id="senha" placeholder="Por favor insira sua senha aqui" type="password"
+                        name="senha" required />
+                </div>
+
+                <div class="mb-3 caixa">
+                    <label class="form-label">Confirmar senha</label>
+                    <input class="form-control" id="confirmaSenha" placeholder="Por favor insira sua senha aqui"
+                        type="password" required />
+                </div>
+
+                <button class="btn btn-primary" id="botaoApagar">Apagar</button>
+                <button class="btn btn-primary" type="submit" id="Enviar">Enviar</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <select id="theme-selector">
+            <option> Default </option>
+            <option value="1">Darkly</option>
+            <option value="2">Solar</option>
+            <option value="3">Pulse</option>
+        </select>
+    </footer>
+
+
+    <script type="text/javascript" src="forms.js" defer></script>
+    <script src="themes.js" defer></script>
+    <script src="Jquery.js"></script>
+</body>
+
+</html>
